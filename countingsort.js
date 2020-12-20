@@ -10,7 +10,7 @@ var A=[];
     }
    
     var t0 = performance.now();
-    ComparisonCountingSort(b);
+    ComparisonCountingSort(A);
     var t1= performance.now();
     console.log('Koha e perfundimit te counting sort = '+(t1-t0)+' milisekonda');
     var t2= performance.now();
