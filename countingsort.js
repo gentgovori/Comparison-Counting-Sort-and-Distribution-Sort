@@ -71,7 +71,7 @@ for(j=0;j<=(u-l);j++)
 //rritja e counterit per cdo numer te hasur ne input array (gjetja e frekuences)
 for(i=0;i<=input.length-1;i++)
 {
-    d[input[i]-l]=d[input[i]-l]+1;
+    d[input[i]-l]=d[input[i]-l]+1; 
 }
 
 //mbledhja e elementeve paraprake (cumulative frequency distribution)
@@ -80,7 +80,7 @@ for(j=1;j<(u-l);j++)
     d[j]=d[j-1]+d[j];
 }
 
-//vendosja sipas frekuences ne array-in perfundimtar
+//vendosja sipas frekuences ne array-in perfundimtar s[]
 for(i=input.length-1;i>=0;i--)
 {
     j=input[i]-l;
