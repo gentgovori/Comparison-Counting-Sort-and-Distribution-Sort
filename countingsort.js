@@ -1,6 +1,8 @@
 
 function setup(){
 
+    b=Array.from({length: 1000000}, () => floor(random(1,1000000)));
+
 var A=[];
     for(var i=0;i<10000;i++)
     {
@@ -8,11 +10,11 @@ var A=[];
     }
    
     var t0 = performance.now();
-    ComparisonCountingSort(A);
+    ComparisonCountingSort(b);
     var t1= performance.now();
     console.log('Koha e perfundimit te counting sort = '+(t1-t0)+' milisekonda');
     var t2= performance.now();
-    DistributionCountingSort(A,1,1000000);
+    DistributionCountingSort(b,1,1000000);
     var t3= performance.now();
     console.log('Koha e perfundimit te distribution sort = '+(t3-t2)+' milisekonda');
 
